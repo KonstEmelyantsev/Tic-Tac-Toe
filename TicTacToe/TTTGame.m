@@ -20,13 +20,17 @@ NSString *const TTTTic = @"X";
 - (id)initWithGameGrid:(NSMutableArray *)grid {
     self = [TTTGame new];
     if(self) {
-        self.gameGrid = grid;
-        self.currentPlayer = TTTPlayerFirstPlayer;
+        [self setGameGrid:grid];
+        for(TTTGameCell *gameCell in self.gameGrid) {
+            [gameCell setCurrentGameValue:TTTGameValueNone];
+        }
+        [self setCurrentPlayer:TTTPlayerFirstPlayer];
     }
     return self;
 }
 
 - (void)gameCellClick:(TTTGameCell *)gameCell {
+    [gameCell setEnabled:NO];
     if(self.currentPlayer == TTTPlayerFirstPlayer) {
         [self firstGamerClick:gameCell];
     } else {
@@ -35,17 +39,23 @@ NSString *const TTTTic = @"X";
 }
 
 - (void)firstGamerClick:(TTTGameCell *)gameCell {
-    self.currentPlayer = TTTPlayerSecondPlayer;
-    gameCell.currentGameValue = TTTGameValueToe;
+    [self setCurrentPlayer:TTTPlayerSecondPlayer];
     [gameCell setTitle:TTTToe forState:UIControlStateNormal];
     [gameCell setCurrentGameValue:TTTGameValueToe];
 }
 
 - (void)secondGamerClick:(TTTGameCell *)gameCell {
-    self.currentPlayer = TTTPlayerFirstPlayer;
-    gameCell.currentGameValue = TTTGameValueTic;
+    [self setCurrentPlayer:TTTPlayerFirstPlayer];
     [gameCell setTitle:TTTTic forState:UIControlStateNormal];
     [gameCell setCurrentGameValue:TTTGameValueTic];
+}
+
+- (void)gameStep:(TTTGameCell *)gameCell {
+    for(TTTGameCell *cell in self.gameGrid) {
+        if(cell.tag == gameCell.tag) {
+            [cell setCurrentGameValue:gameCell.currentGameValue];
+        }
+    }
 }
 
 @end

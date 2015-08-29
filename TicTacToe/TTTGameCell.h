@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, TTTGameValue) {
-    TTTGameValueToe = -1,
-    TTTGameValueTic = 1,
+    TTTGameValueToe = 1,
+    TTTGameValueNone = 0,
+    TTTGameValueTic = 4,
 };
 
 @interface TTTGameCell : UIButton
