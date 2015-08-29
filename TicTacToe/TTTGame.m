@@ -14,6 +14,7 @@ NSString *const TTTTic = @"X";
 
 NSString *const TTTFirtsPlayerWin = @"Победил первый игрок!";
 NSString *const TTTSecondPlayerWin = @"Победил второй игрок!";
+NSString *const TTTDraw = @"Ничья!";
 
 @interface TTTGame ()
 
@@ -72,6 +73,9 @@ NSString *const TTTSecondPlayerWin = @"Победил второй игрок!";
         [self endGame];
     } else if([self gameStatus] == TTTGameStatusSecondWin) {
         [self showAlertWithTitle:TTTSecondPlayerWin];
+        [self endGame];
+    } else if(([self gameStatus] == TTTGameStatusDraw) && (self.gameStepCount == TTTGameStepEndStep)) {
+        [self showAlertWithTitle:TTTDraw];
         [self endGame];
     }
 }

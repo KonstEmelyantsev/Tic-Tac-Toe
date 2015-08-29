@@ -23,7 +23,7 @@ typedef NS_ENUM(NSUInteger, TTTGameStatus) {
 
 typedef NS_ENUM(NSUInteger, TTTGameStep) {
     TTTGameStepPreBeginStep = 0,
-    TTTGameStepPreEndStep = 8,
+    TTTGameStepEndStep = 9,
 };
 
 @interface TTTGame : NSObject
