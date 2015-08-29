@@ -80,18 +80,18 @@ NSString *const TTTDraw = @"Ничья!";
     NSMutableArray *grid = self.gameGrid;
     
     //calculating game line values
-    NSNumber *firstHorizLine = [NSNumber numberWithInteger:[(TTTGameCell *)grid[0] currentGameValue] + [(TTTGameCell *)grid[1] currentGameValue] + [(TTTGameCell *)grid[2] currentGameValue]];
-    NSNumber *secondHorizLine = [NSNumber numberWithInteger:[(TTTGameCell *)grid[3] currentGameValue] + [(TTTGameCell *)grid[4] currentGameValue] + [(TTTGameCell *)grid[5] currentGameValue]];
-    NSNumber *thirdHorizLine = [NSNumber numberWithInteger:[(TTTGameCell *)grid[6] currentGameValue] + [(TTTGameCell *)grid[7] currentGameValue] + [(TTTGameCell *)grid[8] currentGameValue]];
+    NSNumber *firstHorizLine = [self gameLineValueFromGameCells:@[grid[0], grid[1], grid[2]]];
+    NSNumber *secondHorizLine = [self gameLineValueFromGameCells:@[grid[3], grid[4], grid[5]]];
+    NSNumber *thirdHorizLine = [self gameLineValueFromGameCells:@[grid[6], grid[7], grid[8]]];
     
-    NSNumber *firstVertLine = [NSNumber numberWithInteger:[(TTTGameCell *)grid[0] currentGameValue] + [(TTTGameCell *)grid[3] currentGameValue] + [(TTTGameCell *)grid[6] currentGameValue]];
-    NSNumber *secondVertLine = [NSNumber numberWithInteger:[(TTTGameCell *)grid[1] currentGameValue] + [(TTTGameCell *)grid[4] currentGameValue] + [(TTTGameCell *)grid[7] currentGameValue]];
-    NSNumber *thirdVertLine = [NSNumber numberWithInteger:[(TTTGameCell *)grid[2] currentGameValue] + [(TTTGameCell *)grid[5] currentGameValue] + [(TTTGameCell *)grid[8] currentGameValue]];
+    NSNumber *firstVertLine = [self gameLineValueFromGameCells:@[grid[0], grid[3], grid[6]]];
+    NSNumber *secondVertLine = [self gameLineValueFromGameCells:@[grid[1], grid[4], grid[7]]];
+    NSNumber *thirdVertLine = [self gameLineValueFromGameCells:@[grid[2], grid[5], grid[8]]];
     
-    NSNumber *firstDiagonalLine = [NSNumber numberWithInteger:[(TTTGameCell *)grid[0] currentGameValue] + [(TTTGameCell *)grid[4] currentGameValue] + [(TTTGameCell *)grid[8] currentGameValue]];
-    NSNumber *secondDiagonalLine = [NSNumber numberWithInteger:[(TTTGameCell *)grid[2] currentGameValue] + [(TTTGameCell *)grid[4] currentGameValue] + [(TTTGameCell *)grid[6] currentGameValue]];
+    NSNumber *firstDiagonalLine = [self gameLineValueFromGameCells:@[grid[0], grid[4], grid[8]]];
+    NSNumber *secondDiagonalLine = [self gameLineValueFromGameCells:@[grid[2], grid[4], grid[6]]];
     
-    NSMutableArray *gameLineValues = (NSMutableArray *)@[firstHorizLine,secondHorizLine, thirdHorizLine, firstVertLine, secondVertLine, thirdVertLine, firstDiagonalLine, secondDiagonalLine];
+    NSMutableArray *gameLineValues = (NSMutableArray *)@[firstHorizLine, secondHorizLine, thirdHorizLine, firstVertLine, secondVertLine, thirdVertLine, firstDiagonalLine, secondDiagonalLine];
     
     for(NSNumber *gameLineValue in gameLineValues) {
         if([gameLineValue integerValue] == TTTGameStatusFirstWin) {
@@ -102,6 +102,14 @@ NSString *const TTTDraw = @"Ничья!";
     }
     
     return gameStatus;
+}
+
+- (NSNumber *)gameLineValueFromGameCells:(NSArray *)gameCells {
+    NSInteger gameLineValue = 0;
+    for(int i = 0; i < [gameCells count]; i++) {
+        gameLineValue += [(TTTGameCell *)gameCells[i] currentGameValue];
+    }
+    return [NSNumber numberWithInteger:gameLineValue];
 }
 
 - (void)showAlertWithTitle:(NSString *)title {
