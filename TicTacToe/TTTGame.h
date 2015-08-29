@@ -15,10 +15,22 @@ typedef NS_ENUM(NSUInteger, TTTPlayer) {
     TTTPlayerSecondPlayer = 2,
 };
 
+typedef NS_ENUM(NSUInteger, TTTGameStatus) {
+    TTTGameStatusDraw = 0,
+    TTTGameStatusFirstWin = 3,
+    TTTGameStatusSecondWin = 12,
+};
+
+typedef NS_ENUM(NSUInteger, TTTGameStep) {
+    TTTGameStepPreBeginStep = 0,
+    TTTGameStepPreEndStep = 8,
+};
+
 @interface TTTGame : NSObject
 
 @property (nonatomic, strong) NSMutableArray *gameGrid;
 @property (nonatomic, assign) NSUInteger currentPlayer;
+@property (nonatomic, assign) NSUInteger gameStepCount;
 
 - (id)initWithGameGrid:(NSMutableArray *)gameGrid;
 - (void)gameCellClick:(TTTGameCell *)gameCell;
