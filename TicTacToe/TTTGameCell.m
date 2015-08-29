@@ -8,6 +8,9 @@
 
 #import "TTTGameCell.h"
 
+NSString *const TTTToe = @"O";
+NSString *const TTTTic = @"X";
+
 @implementation TTTGameCell
 
 @synthesize currentGameValue;
@@ -16,6 +19,16 @@
     [self setCurrentGameValue:TTTGameValueNone];
     [self setTitle:@"" forState:UIControlStateNormal];
     [self setEnabled:YES];
+}
+
+- (void)firstGamerClick {
+    [self setTitle:TTTToe forState:UIControlStateNormal];
+    [self setCurrentGameValue:TTTGameValueToe];
+}
+
+- (void)secondGamerClick {
+    [self setTitle:TTTTic forState:UIControlStateNormal];
+    [self setCurrentGameValue:TTTGameValueTic];
 }
 
 @end

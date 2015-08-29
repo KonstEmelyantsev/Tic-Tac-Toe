@@ -9,9 +9,6 @@
 #import "TTTGame.h"
 #import "TTTGameCell.h"
 
-NSString *const TTTToe = @"O";
-NSString *const TTTTic = @"X";
-
 NSString *const TTTFirtsPlayerWin = @"Победил первый игрок!";
 NSString *const TTTSecondPlayerWin = @"Победил второй игрок!";
 NSString *const TTTDraw = @"Ничья!";
@@ -51,14 +48,12 @@ NSString *const TTTDraw = @"Ничья!";
 
 - (void)firstGamerClickForGameCell:(TTTGameCell *)gameCell {
     [self setCurrentPlayer:TTTPlayerSecondPlayer];
-    [gameCell setTitle:TTTToe forState:UIControlStateNormal];
-    [gameCell setCurrentGameValue:TTTGameValueToe];
+    [gameCell firstGamerClick];
 }
 
 - (void)secondGamerClickForGameCell:(TTTGameCell *)gameCell {
     [self setCurrentPlayer:TTTPlayerFirstPlayer];
-    [gameCell setTitle:TTTTic forState:UIControlStateNormal];
-    [gameCell setCurrentGameValue:TTTGameValueTic];
+    [gameCell secondGamerClick];
 }
 
 - (void)gameStepForGameCell:(TTTGameCell *)gameCell {
