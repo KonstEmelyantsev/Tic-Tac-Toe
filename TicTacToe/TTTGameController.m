@@ -63,13 +63,15 @@ NSString *const TTTDraw = @"Ничья!";
             [cell setCurrentGameValue:gameCell.currentGameValue];
         }
     }
-    if([self gameStatus] == TTTGameStatusFirstWin) {
+    
+    NSUInteger gameStatus = [self gameStatus];
+    if(gameStatus == TTTGameStatusFirstWin) {
         [self showAlertWithTitle:TTTFirtsPlayerWin];
         [self endGame];
-    } else if([self gameStatus] == TTTGameStatusSecondWin) {
+    } else if(gameStatus == TTTGameStatusSecondWin) {
         [self showAlertWithTitle:TTTSecondPlayerWin];
         [self endGame];
-    } else if(([self gameStatus] == TTTGameStatusDraw) && (self.gameStepCount == TTTGameStepEndStep)) {
+    } else if((gameStatus == TTTGameStatusDraw) && (self.gameStepCount == TTTGameStepEndStep)) {
         [self showAlertWithTitle:TTTDraw];
         [self endGame];
     }
