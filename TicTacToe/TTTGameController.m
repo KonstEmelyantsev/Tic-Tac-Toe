@@ -80,16 +80,16 @@ NSString *const TTTDraw = @"Ничья!";
     NSMutableArray *grid = self.gameGrid;
     
     //calculating game line values
-    NSNumber *firstHorizLine = [self gameLineValueFromGameCells:@[grid[0], grid[1], grid[2]]];
-    NSNumber *secondHorizLine = [self gameLineValueFromGameCells:@[grid[3], grid[4], grid[5]]];
-    NSNumber *thirdHorizLine = [self gameLineValueFromGameCells:@[grid[6], grid[7], grid[8]]];
+    NSNumber *firstHorizLine        = [self gameLineValueFromGameCells:@[grid[0], grid[1], grid[2]]];
+    NSNumber *secondHorizLine       = [self gameLineValueFromGameCells:@[grid[3], grid[4], grid[5]]];
+    NSNumber *thirdHorizLine        = [self gameLineValueFromGameCells:@[grid[6], grid[7], grid[8]]];
     
-    NSNumber *firstVertLine = [self gameLineValueFromGameCells:@[grid[0], grid[3], grid[6]]];
-    NSNumber *secondVertLine = [self gameLineValueFromGameCells:@[grid[1], grid[4], grid[7]]];
-    NSNumber *thirdVertLine = [self gameLineValueFromGameCells:@[grid[2], grid[5], grid[8]]];
+    NSNumber *firstVertLine         = [self gameLineValueFromGameCells:@[grid[0], grid[3], grid[6]]];
+    NSNumber *secondVertLine        = [self gameLineValueFromGameCells:@[grid[1], grid[4], grid[7]]];
+    NSNumber *thirdVertLine         = [self gameLineValueFromGameCells:@[grid[2], grid[5], grid[8]]];
     
-    NSNumber *firstDiagonalLine = [self gameLineValueFromGameCells:@[grid[0], grid[4], grid[8]]];
-    NSNumber *secondDiagonalLine = [self gameLineValueFromGameCells:@[grid[2], grid[4], grid[6]]];
+    NSNumber *firstDiagonalLine     = [self gameLineValueFromGameCells:@[grid[0], grid[4], grid[8]]];
+    NSNumber *secondDiagonalLine    = [self gameLineValueFromGameCells:@[grid[2], grid[4], grid[6]]];
     
     NSMutableArray *gameLineValues = (NSMutableArray *)@[firstHorizLine, secondHorizLine, thirdHorizLine, firstVertLine, secondVertLine, thirdVertLine, firstDiagonalLine, secondDiagonalLine];
     
