@@ -27,62 +27,105 @@
                                             <color key="titleColor" red="1" green="0.17315114779999999" blue="0.092600611730000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="gameCellClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WEv-H3-RxF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwB-gP-HS7" userLabel="topCenterButton" customClass="TTTGameCell">
                                         <rect key="frame" x="92" y="20" width="70" height="70"/>
                                         <color key="backgroundColor" red="0.0" green="0.71764707569999997" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                         <state key="normal">
+                                            <color key="titleColor" red="1" green="0.17315114779999999" blue="0.092600611730000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="gameCellClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hny-hb-wwB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPS-Ea-vFN" userLabel="topRightButton" customClass="TTTGameCell">
                                         <rect key="frame" x="164" y="20" width="70" height="70"/>
                                         <color key="backgroundColor" red="0.0" green="0.71764707569999997" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                         <state key="normal">
+                                            <color key="titleColor" red="1" green="0.17315114779999999" blue="0.092600611730000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="gameCellClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="plJ-DX-wHb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHC-Jo-tVa" userLabel="centerLeftButton" customClass="TTTGameCell">
                                         <rect key="frame" x="20" y="92" width="70" height="70"/>
                                         <color key="backgroundColor" red="0.0" green="0.71764707569999997" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                         <state key="normal">
+                                            <color key="titleColor" red="1" green="0.17315114779999999" blue="0.092600611730000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="gameCellClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7UK-qq-R5O"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2k-yR-yY3" userLabel="centerCenterButton" customClass="TTTGameCell">
                                         <rect key="frame" x="92" y="92" width="70" height="70"/>
                                         <color key="backgroundColor" red="0.0" green="0.71764707569999997" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                         <state key="normal">
+                                            <color key="titleColor" red="1" green="0.17315114779999999" blue="0.092600611730000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="gameCellClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ajm-hP-hSy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTA-7b-XM5" userLabel="centerRightButton" customClass="TTTGameCell">
                                         <rect key="frame" x="164" y="92" width="70" height="70"/>
                                         <color key="backgroundColor" red="0.0" green="0.71764707569999997" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                         <state key="normal">
+                                            <color key="titleColor" red="1" green="0.17315114779999999" blue="0.092600611730000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="gameCellClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ae-pv-xZg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bU-mQ-8hG" userLabel="bottomLeftButton" customClass="TTTGameCell">
                                         <rect key="frame" x="20" y="164" width="70" height="70"/>
                                         <color key="backgroundColor" red="0.0" green="0.71764707569999997" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                         <state key="normal">
+                                            <color key="titleColor" red="1" green="0.17315114779999999" blue="0.092600611730000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="gameCellClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R7q-XH-gp4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iI-8u-hKc" userLabel="bottomCenterButton" customClass="TTTGameCell">
                                         <rect key="frame" x="92" y="164" width="70" height="70"/>
                                         <color key="backgroundColor" red="0.0" green="0.71764707569999997" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                         <state key="normal">
+                                            <color key="titleColor" red="1" green="0.17315114779999999" blue="0.092600611730000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="gameCellClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7z7-bs-s8x"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTP-vy-zA4" userLabel="bottomRightButton" customClass="TTTGameCell">
                                         <rect key="frame" x="164" y="164" width="70" height="70"/>
                                         <color key="backgroundColor" red="0.0" green="0.71764707569999997" blue="0.96862751250000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                         <state key="normal">
+                                            <color key="titleColor" red="1" green="0.17315114779999999" blue="0.092600611730000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="gameCellClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UaR-sB-yJ9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

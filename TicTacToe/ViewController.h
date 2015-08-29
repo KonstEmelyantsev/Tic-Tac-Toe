@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class TTTGame;
+
 @interface ViewController : UIViewController
 
 @property (nonatomic, strong) NSMutableArray *gameGrid;
+@property (nonatomic, strong) TTTGame *currentGame;
 
 @end
 

@@ -15,6 +15,6 @@ typedef NS_ENUM(NSUInteger, TTTGameValue) {
 
 @interface TTTGameCell : UIButton
 
-@property (nonatomic, assign) NSUInteger currentValue;
+@property (nonatomic, assign) NSUInteger currentGameValue;
 
 @end

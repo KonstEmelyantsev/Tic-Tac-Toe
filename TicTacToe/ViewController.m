@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TTTGameCell.h"
+#import "TTTGame.h"
 
 @interface ViewController ()
 
@@ -27,10 +28,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self updateData];
 }
 
 - (void)updateData {
     self.gameGrid = [[NSMutableArray alloc] initWithArray:@[self.topLeftButton, self.topCenterButton, self.topRightButton, self.centerLeftButton, self.centerCenterButton, self.centerRightButton, self.bottomLeftButton, self.bottomCenterButton, self.bottomRightButton]];
+    
+    [self createNewGame];
+}
+
+- (void)createNewGame {
+    self.currentGame = [[TTTGame alloc] initWithGameGrid:self.gameGrid];
+}
+
+- (IBAction)gameCellClick:(id)sender {
+    [self.currentGame gameCellClick:(TTTGameCell *)sender];
 }
 
 @end

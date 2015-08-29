@@ -10,4 +10,6 @@
 
 @implementation TTTGameCell
 
+@synthesize currentGameValue;
+
 @end

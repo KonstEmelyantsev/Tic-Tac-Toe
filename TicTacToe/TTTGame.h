@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class TTTGameCell;
+
 typedef NS_ENUM(NSUInteger, TTTPlayer) {
-    PTPlayerFirstPlayer = 1,
-    PTPlayerSecondPlayer = 2,
+    TTTPlayerFirstPlayer = 1,
+    TTTPlayerSecondPlayer = 2,
 };
 
 @interface TTTGame : NSObject
@@ -19,5 +21,6 @@ typedef NS_ENUM(NSUInteger, TTTPlayer) {
 @property (nonatomic, assign) NSUInteger currentPlayer;
 
 - (id)initWithGameGrid:(NSMutableArray *)gameGrid;
+- (void)gameCellClick:(TTTGameCell *)gameCell;
 
 @end
