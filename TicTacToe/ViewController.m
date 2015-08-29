@@ -7,8 +7,19 @@
 //
 
 #import "ViewController.h"
+#import "TTTGameCell.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet TTTGameCell *topLeftButton;
+@property (weak, nonatomic) IBOutlet TTTGameCell *topCenterButton;
+@property (weak, nonatomic) IBOutlet TTTGameCell *topRightButton;
+@property (weak, nonatomic) IBOutlet TTTGameCell *centerLeftButton;
+@property (weak, nonatomic) IBOutlet TTTGameCell *centerCenterButton;
+@property (weak, nonatomic) IBOutlet TTTGameCell *centerRightButton;
+@property (weak, nonatomic) IBOutlet TTTGameCell *bottomLeftButton;
+@property (weak, nonatomic) IBOutlet TTTGameCell *bottomCenterButton;
+@property (weak, nonatomic) IBOutlet TTTGameCell *bottomRightButton;
 
 @end
 
@@ -16,12 +27,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)updateData {
+    self.gameGrid = [[NSMutableArray alloc] initWithArray:@[self.topLeftButton, self.topCenterButton, self.topRightButton, self.centerLeftButton, self.centerCenterButton, self.centerRightButton, self.bottomLeftButton, self.bottomCenterButton, self.bottomRightButton]];
 }
 
 @end

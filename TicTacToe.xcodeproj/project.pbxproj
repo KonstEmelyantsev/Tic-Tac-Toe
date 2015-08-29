@@ -14,6 +14,8 @@
 		E724996D1B91BAEC003A2CD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E724996C1B91BAEC003A2CD0 /* Images.xcassets */; };
 		E72499701B91BAED003A2CD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E724996E1B91BAED003A2CD0 /* LaunchScreen.xib */; };
 		E724997C1B91BAED003A2CD0 /* TicTacToeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E724997B1B91BAED003A2CD0 /* TicTacToeTests.m */; };
+		E72499871B91BB90003A2CD0 /* TTTGame.m in Sources */ = {isa = PBXBuildFile; fileRef = E72499861B91BB90003A2CD0 /* TTTGame.m */; };
+		E724998A1B91BF85003A2CD0 /* TTTGameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E72499891B91BF85003A2CD0 /* TTTGameCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		E72499751B91BAED003A2CD0 /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E724997A1B91BAED003A2CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E724997B1B91BAED003A2CD0 /* TicTacToeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicTacToeTests.m; sourceTree = "<group>"; };
+		E72499851B91BB90003A2CD0 /* TTTGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTGame.h; sourceTree = "<group>"; };
+		E72499861B91BB90003A2CD0 /* TTTGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTGame.m; sourceTree = "<group>"; };
+		E72499881B91BF85003A2CD0 /* TTTGameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTGameCell.h; sourceTree = "<group>"; };
+		E72499891B91BF85003A2CD0 /* TTTGameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTGameCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				E72499641B91BAEC003A2CD0 /* AppDelegate.m */,
 				E72499661B91BAEC003A2CD0 /* ViewController.h */,
 				E72499671B91BAEC003A2CD0 /* ViewController.m */,
+				E72499851B91BB90003A2CD0 /* TTTGame.h */,
+				E72499861B91BB90003A2CD0 /* TTTGame.m */,
+				E72499881B91BF85003A2CD0 /* TTTGameCell.h */,
+				E72499891B91BF85003A2CD0 /* TTTGameCell.m */,
 				E72499691B91BAEC003A2CD0 /* Main.storyboard */,
 				E724996C1B91BAEC003A2CD0 /* Images.xcassets */,
 				E724996E1B91BAED003A2CD0 /* LaunchScreen.xib */,
@@ -221,6 +231,8 @@
 			files = (
 				E72499681B91BAEC003A2CD0 /* ViewController.m in Sources */,
 				E72499651B91BAEC003A2CD0 /* AppDelegate.m in Sources */,
+				E724998A1B91BF85003A2CD0 /* TTTGameCell.m in Sources */,
+				E72499871B91BB90003A2CD0 /* TTTGame.m in Sources */,
 				E72499621B91BAEC003A2CD0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
