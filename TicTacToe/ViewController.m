@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "TTTGameCell.h"
-#import "TTTGame.h"
+#import "TTTGameController.h"
 
 @interface ViewController ()
 
@@ -39,7 +39,7 @@
 }
 
 - (void)createNewGame {
-    self.currentGame = [[TTTGame alloc] initWithGameGrid:self.gameGrid];
+    self.currentGame = [[TTTGameController alloc] initWithGameGrid:self.gameGrid];
 }
 
 - (IBAction)gameCellClick:(id)sender {

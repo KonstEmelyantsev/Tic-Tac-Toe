@@ -1,5 +1,5 @@
 //
-//  TTTGame.h
+//  TTTGameController.h
 //  TicTacToe
 //
 //  Created by KonstEmelyantsev on 8/29/15.
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSUInteger, TTTGameStep) {
     TTTGameStepEndStep = 9,
 };
 
-@interface TTTGame : NSObject
+@interface TTTGameController : NSObject
 
 @property (nonatomic, strong) NSMutableArray *gameGrid;
 @property (nonatomic, assign) NSUInteger currentPlayer;

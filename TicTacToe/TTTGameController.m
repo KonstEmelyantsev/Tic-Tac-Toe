@@ -1,30 +1,30 @@
 //
-//  TTTGame.m
+//  TTTGameController.m
 //  TicTacToe
 //
 //  Created by KonstEmelyantsev on 8/29/15.
 //  Copyright (c) 2015 KonstEmelyantsev. All rights reserved.
 //
 
-#import "TTTGame.h"
+#import "TTTGameController.h"
 #import "TTTGameCell.h"
 
 NSString *const TTTFirtsPlayerWin = @"Победил первый игрок!";
 NSString *const TTTSecondPlayerWin = @"Победил второй игрок!";
 NSString *const TTTDraw = @"Ничья!";
 
-@interface TTTGame ()
+@interface TTTGameController ()
 
 @end
 
-@implementation TTTGame
+@implementation TTTGameController
 
 @synthesize currentPlayer;
 @synthesize gameGrid;
 @synthesize gameStepCount;
 
 - (id)initWithGameGrid:(NSMutableArray *)grid {
-    self = [TTTGame new];
+    self = [TTTGameController new];
     if(self) {
         [self setGameGrid:grid];
         for(TTTGameCell *gameCell in self.gameGrid) {
