@@ -46,4 +46,8 @@
     [self.currentGame gameCellClick:(TTTGameCell *)sender];
 }
 
+- (IBAction)newGameClick:(id)sender {
+    [self createNewGame];
+}
+
 @end

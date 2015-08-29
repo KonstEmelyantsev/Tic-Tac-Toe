@@ -30,7 +30,7 @@ NSString *const TTTSecondPlayerWin = @"Победил второй игрок!";
     if(self) {
         [self setGameGrid:grid];
         for(TTTGameCell *gameCell in self.gameGrid) {
-            [gameCell setCurrentGameValue:TTTGameValueNone];
+            [gameCell resetGameValue];
         }
         [self setCurrentPlayer:TTTPlayerFirstPlayer];
         [self setGameStepCount:TTTGameStepPreBeginStep];

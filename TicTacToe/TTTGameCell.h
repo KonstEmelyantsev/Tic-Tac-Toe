@@ -18,4 +18,6 @@ typedef NS_ENUM(NSUInteger, TTTGameValue) {
 
 @property (nonatomic, assign) NSUInteger currentGameValue;
 
+- (void)resetGameValue;
+
 @end

@@ -12,4 +12,10 @@
 
 @synthesize currentGameValue;
 
+- (void)resetGameValue {
+    [self setCurrentGameValue:TTTGameValueNone];
+    [self setTitle:@"" forState:UIControlStateNormal];
+    [self setEnabled:YES];
+}
+
 @end
