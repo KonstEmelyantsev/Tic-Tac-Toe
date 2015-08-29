@@ -28,10 +28,6 @@ typedef NS_ENUM(NSUInteger, TTTGameStep) {
 
 @interface TTTGameController : NSObject
 
-@property (nonatomic, strong) NSMutableArray *gameGrid;
-@property (nonatomic, assign) NSUInteger currentPlayer;
-@property (nonatomic, assign) NSUInteger gameStepCount;
-
 - (id)initWithGameGrid:(NSMutableArray *)gameGrid;
 - (void)gameCellClick:(TTTGameCell *)gameCell;
 

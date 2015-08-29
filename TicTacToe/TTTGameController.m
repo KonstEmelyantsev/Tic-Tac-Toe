@@ -15,6 +15,10 @@ NSString *const TTTDraw = @"Ничья!";
 
 @interface TTTGameController ()
 
+@property (nonatomic, strong) NSMutableArray *gameGrid;
+@property (nonatomic, assign) NSUInteger currentPlayer;
+@property (nonatomic, assign) NSUInteger gameStepCount;
+
 @end
 
 @implementation TTTGameController
